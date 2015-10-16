@@ -1,0 +1,31 @@
+{
+"api.version":"v1",
+  "sources":[{
+    "name":"securelog",
+    "category":"os_secure",
+    "automaticDateParsing":true,
+    "multilineProcessingEnabled":false,
+    "useAutolineMatching":false,
+    "forceTimeZone":false,
+    "filters":[],
+    "cutoffTimestamp":1442289600000,
+    "encoding":"UTF-8",
+    "pathExpression":"/var/log/secure",
+    "blacklist":[],
+    "sourceType":"LocalFile"
+  },{
+    "name":"syslog",
+    "category":"os_syslog",
+    "automaticDateParsing":true,
+    "multilineProcessingEnabled":false,
+    "useAutolineMatching":false,
+    "forceTimeZone":false,
+    "timeZone":"Etc/UTC",
+    "filters":[],
+    "cutoffTimestamp":1442289600000,
+    "encoding":"UTF-8",
+    "pathExpression":"/var/log/messages",
+    "blacklist":[],
+    "sourceType":"LocalFile"
+}]
+}
